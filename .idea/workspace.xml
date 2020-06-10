@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a5ca7e9-4b84-43b5-90a6-160bf127e6c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/words.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/db/words.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/menu.rb" beforeDir="false" afterPath="$PROJECT_DIR$/routes/menu.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translator_application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/translator_application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/menu/menu.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu/menu.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/words.rb" beforeDir="false" afterPath="$PROJECT_DIR$/routes/words.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +65,7 @@
       <workItem from="1591707140712" duration="7927000" />
       <workItem from="1591715134337" duration="3992000" />
       <workItem from="1591732123271" duration="473000" />
-      <workItem from="1591786217765" duration="9276000" />
+      <workItem from="1591786217765" duration="10657000" />
     </task>
     <servers />
   </component>

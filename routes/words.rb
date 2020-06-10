@@ -44,7 +44,6 @@ class TranslatorApplication
       next if @options.failure? || @word.nil?
 
       r.is do
-        # @options = DryResultFormeWrapper.new(WordNameSchema.call({word_name: word_name}))
         view('word')
       end
       r.on 'new_meaning' do
@@ -59,7 +58,6 @@ class TranslatorApplication
                                             synonyms: @options[:meaning_synonyms].split(','),
                                             translations: @options[:meaning_translations].split(',')
                                           }))
-            # r.redirect(WEBrick::HTTPUtils.escape("/words/word/#{word_name}"))
             r.redirect(path(@word))
           end
           view('new_meaning')
