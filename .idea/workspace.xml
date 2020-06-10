@@ -4,6 +4,13 @@
     <list default="true" id="9a5ca7e9-4b84-43b5-90a6-160bf127e6c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/words.rb" beforeDir="false" afterPath="$PROJECT_DIR$/routes/words.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translator_application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/translator_application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/menu/menu.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu/menu.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/words/new_meaning.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/words/new_translation.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/words/translation.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/words/unknown_translation.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/unknown_translations.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/words/word.erb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +33,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/words" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/word" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Files\Projects\Ruby\Practice\Translator\views\word" />
       <recent name="D:\Files\Projects\Ruby\Practice\Translator\views\words" />
       <recent name="D:\Files\Projects\Ruby\Practice\Translator\models" />
       <recent name="D:\Files\Projects\Ruby\Practice\Translator\views" />
@@ -65,7 +73,8 @@
       <workItem from="1591707140712" duration="7927000" />
       <workItem from="1591715134337" duration="3992000" />
       <workItem from="1591732123271" duration="473000" />
-      <workItem from="1591786217765" duration="10657000" />
+      <workItem from="1591786217765" duration="12288000" />
+      <workItem from="1591803157194" duration="1156000" />
     </task>
     <servers />
   </component>

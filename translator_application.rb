@@ -23,6 +23,7 @@ class TranslatorApplication < Roda
 
   require_relative 'routes/menu.rb'
   require_relative 'routes/words.rb'
+  require_relative 'routes/word.rb'
 
   opts[:words] = Store.new.word_list
   status_handler(404) do

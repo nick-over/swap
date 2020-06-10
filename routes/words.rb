@@ -9,13 +9,6 @@ class TranslatorApplication
       WEBrick::HTTPUtils.escape('/words')
     end
   end
-  path Word do |word, action|
-    if action
-      WEBrick::HTTPUtils.escape("/words/word/#{word.name}/#{action}")
-    else
-      WEBrick::HTTPUtils.escape("/words/word/#{word.name}")
-    end
-  end
 
   hash_branch('words') do |r|
     append_view_subdir('words')
@@ -31,85 +24,9 @@ class TranslatorApplication
         view('words')
       end
     end
-    r.on 'unknown_translation' do
-      r.is do
-        @words = opts[:words].words_without_translation
-        view('unknown_translation')
-      end
-    end
-    r.on 'word', String do |raw_word_name|
-      word_name = CGI.unescape(raw_word_name)
-      @word = opts[:words].word_by_name(word_name)
-      @options = DryResultFormeWrapper.new(WordNameSchema.call({ word_name: word_name }))
-      next if @options.failure? || @word.nil?
-
-      r.is do
-        view('word')
-      end
-      r.on 'new_meaning' do
-        r.get do
-          view('new_meaning')
-        end
-        r.post do
-          @options = DryResultFormeWrapper.new(MeaningSchema.call(r.params))
-          if @options.success?
-            @word.add_meaning(Meaning.new({
-                                            value: @options[:meaning_value],
-                                            synonyms: @options[:meaning_synonyms].split(','),
-                                            translations: @options[:meaning_translations].split(',')
-                                          }))
-            r.redirect(path(@word))
-          end
-          view('new_meaning')
-        end
-      end
-      r.on 'new_translation' do
-        r.get do
-          view('new_translation')
-        end
-        r.post do
-          @options = DryResultFormeWrapper.new(TranslationSchema.call(r.params))
-          if @options.success?
-            @word.add_translations(@options[:meaning_value],
-                                   @options[:meaning_translations].split(','))
-            r.redirect(path(@word))
-          end
-          view('new_translation')
-        end
-      end
-      r.is 'translation' do
-        @translations = []
-        r.get do
-          @options = {}
-          view('translation')
-        end
-        r.post do
-          @options = DryResultFormeWrapper.new(MeaningValueSchema.call(r.params))
-          if @options.success?
-            @value = @options[:meaning_value]
-            @translations = @word.translations_by_value(@value)
-          end
-          view('translation')
-        end
-      end
-    end
-    r.is 'new' do
-      r.get do
-        view('new_word')
-      end
-      r.post do
-        @options = DryResultFormeWrapper.new(WordNameSchema.call(r.params))
-        word_name = @options[:word_name]
-        puts word_name.encoding
-        if @options.success?
-          @word = Word.new(name: word_name, lang: @cur_lang)
-          opts[:words].add_word(@word)
-          # r.redirect(WEBrick::HTTPUtils.escape("/words/word/#{word_name}"))
-          r.redirect(path(@word))
-        else
-          view('new_word')
-        end
-      end
+    r.is 'unknown_translations' do
+      @words = opts[:words].words_without_translation
+      view('unknown_translations')
     end
     r.is 'translation_homonyms' do
       @options = {}
@@ -132,6 +49,23 @@ class TranslatorApplication
                })
         else
           view('translation_homonyms')
+        end
+      end
+    end
+    r.is 'new' do
+      r.get do
+        view('new_word')
+      end
+      r.post do
+        @options = DryResultFormeWrapper.new(WordNameSchema.call(r.params))
+        word_name = @options[:word_name]
+        puts word_name.encoding
+        if @options.success?
+          @word = Word.new(name: word_name, lang: @cur_lang)
+          opts[:words].add_word(@word)
+          r.redirect(path(@word))
+        else
+          view('new_word')
         end
       end
     end
