@@ -1,12 +1,11 @@
 # frozen_string_literal: true
 
-require 'date'
 require 'forme'
 require 'roda'
 
 require_relative 'models'
 
-# The application class
+# The main application class
 class TranslatorApplication < Roda
   opts[:root] = __dir__
   plugin :environments
@@ -22,16 +21,17 @@ class TranslatorApplication < Roda
     opts[:serve_static] = true
   end
 
-  require_relative 'routes/books.rb'
+  require_relative 'routes/menu.rb'
+  require_relative 'routes/words.rb'
 
-  opts[:store] = Store.new
-  opts[:books] = opts[:store].book_list
-
+  opts[:words] = Store.new.word_list
   status_handler(404) do
     view('not_found')
   end
 
   route do |r|
+    @options = {}
+    @cur_lang = opts[:words].cur_lang
     r.public if opts[:serve_static]
     r.hash_branches
 

@@ -1,0 +1,22 @@
+<div class="grid-x grid-padding-x">
+  <div class="cell">
+    <h3>Добавить новый перевод к слову <%= @word.name %></h3>
+    <a href="<%= menu_path %>">Вернуться на главное меню</a>
+    <% form({method: :post}, {obj: @options}) do |f| %>
+      <div class="grid-x grid-padding-x">
+        <div class="cell">
+          <%= f.input(:meaning_value, type: :select, label: "Веберите значение для слова", options: @word.meanings_values, add_blank: true) %>
+        </div>
+        <div class="cell">
+          <%= f.input(:meaning_translations, type: :textarea, label: "Введите перевод через запятую", placeholder: 'эксперт,профессионал') %>
+        </div>
+        <div class="medium-3 cell">
+          <%= f.button(value: 'Добавить новые перевод', class: 'button') %>
+        </div>
+        <div class="medium-6 cell">
+          <a href="<%= path(@word, 'new_meaning') %>">Добавить новое значение для слова</a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

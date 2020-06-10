@@ -1,0 +1,17 @@
+<div class="grid-x grid-padding-x">
+  <div class="cell">
+    <a href="<%= menu_path %>">Вернуться на главное меню</a>
+  </div>
+  <div class="cell">
+    <% form({method: :post}, {obj: @options}) do |f| %>
+    <div class="grid-x grid-padding-x">
+      <div class="cell">
+        <%= f.input(:word_name, type: :text, label: "Введите слово", placeholder: 'Коса') %>
+      </div>
+      <div class="cell">
+        <%= f.button(value: "Добавить новое слово", class:"button") %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

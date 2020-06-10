@@ -1,0 +1,34 @@
+<div class="grid-x grid-padding-x">
+  <div class="medium-10 cell">
+    <h3>Транзитивные омониимы?</h3>
+    <a href="<%= menu_path %>">Вернуться на главное меню</a>
+    <p class="callout secondary">
+      Проверка на то, являются ли два слова <strong>"транзитивными омонимами"</strong>: их переводы омонимичны.
+      Например, <em>«рука»</em> и <em>«оружие»</em> переводятся как «arm», поэтому они «транзитивные омонимы».
+    </p>
+    <% form({method: :post}, {obj: @options}) do |f| %>
+      <div class="grid-x grid-padding-x">
+        <div class="cell">
+          <%= f.input(:word_name1, type: :text, label: "Первое слово", placeholder: "рука") %>
+        </div>
+        <div class="cell">
+          <%= f.input(:word_name2, type: :text, label: "Второе слово", placeholder: "оружие") %>
+        </div>
+        <div class="cell">
+          <%= f.button(value: "Проверить", class: "button") %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="medium-10 cell">
+    <p class="h5">
+      <% if @options != {} && @options.success? %>
+        <% if @translation_homonyms %>
+          Слова <b><%= word_name1 %></b> и <b><%= word_name2 %></b> являеются транзитивными омонимами
+        <% else %>
+          Слова <b><%= word_name1 %></b> и <b><%= word_name2 %></b> не транзитивные омонимы
+        <% end %>
+      <% end %>
+    </p>
+  </div>
+</div>

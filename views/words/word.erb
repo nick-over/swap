@@ -1,0 +1,38 @@
+<div class="grid-x grid-margin-x">
+  <div class="cell large-12">
+    <h3>Слово <%= @word.name %></h3>
+    <ul>
+      <li>
+        <a href="<%= path(@word, 'new_meaning') %>">Добавить новое значение для слова</a>
+      </li>
+      <li>
+        <a href="<%= path(@word, 'new_translation') %>">Добавить новый перевод для слова</a>
+      </li>
+      <li>
+        <a href="<%= path(@word, 'translation') %>">Перевод по значению</a>
+      </li>
+    </ul>
+    <a class="" href="<%= menu_path %>">Вернуться на главное меню</a>
+    <% if @word.translations? %>
+      <h4>Все возможные переводы слова</h4>
+      <ol>
+        <% @word.meanings.each do |meaning| %>
+          <li>В значении: <strong><%= meaning.value %></strong>
+            <p>
+              Ближашие синонимы:
+              <% meaning.synonyms.each do |synonym| %>
+                <%= synonym %>,
+              <% end %>
+            </p>
+            Переводы:
+            <ul>
+              <% meaning.translations.each do |translation| %>
+                <li><%= translation %></li>
+              <% end %>
+            </ul>
+          </li>
+        <% end %>
+      </ol>
+    <% end %>
+  </div>
+</div>

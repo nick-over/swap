@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a5ca7e9-4b84-43b5-90a6-160bf127e6c1" name="Default Changelist" comment="" />
+    <list default="true" id="9a5ca7e9-4b84-43b5-90a6-160bf127e6c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/words.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/db/words.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/menu.rb" beforeDir="false" afterPath="$PROJECT_DIR$/routes/menu.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translator_application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/translator_application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/menu/menu.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu/menu.erb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1d2BRIM7Tf0Pe0VNCOL7RVIRPsP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,11 +30,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/words" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Files\Projects\Ruby\Practice\Translator\views\words" />
+      <recent name="D:\Files\Projects\Ruby\Practice\Translator\models" />
       <recent name="D:\Files\Projects\Ruby\Practice\Translator\views" />
       <recent name="D:\Files\Projects\Ruby\Practice\Translator" />
     </key>
@@ -36,11 +55,45 @@
       <option name="presentableId" value="Default" />
       <updated>1591613297990</updated>
       <workItem from="1591613300175" duration="1682000" />
-      <workItem from="1591615390200" duration="2162000" />
+      <workItem from="1591615390200" duration="6699000" />
+      <workItem from="1591622430655" duration="8301000" />
+      <workItem from="1591638755145" duration="1798000" />
+      <workItem from="1591640596582" duration="6130000" />
+      <workItem from="1591647114432" duration="684000" />
+      <workItem from="1591647822522" duration="2922000" />
+      <workItem from="1591650802014" duration="426000" />
+      <workItem from="1591651257482" duration="5901000" />
+      <workItem from="1591657295498" duration="347000" />
+      <workItem from="1591687865626" duration="9176000" />
+      <workItem from="1591698523262" duration="4089000" />
+      <workItem from="1591703461968" duration="2609000" />
+      <workItem from="1591706122000" duration="987000" />
+      <workItem from="1591707140712" duration="7927000" />
+      <workItem from="1591715134337" duration="3992000" />
+      <workItem from="1591732123271" duration="473000" />
+      <workItem from="1591786217765" duration="9276000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="501" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591649951857">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="501" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591649951857" />
+    <state x="161" y="0" key="SettingsEditor" timestamp="1591798242739">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="161" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591798242739" />
+    <state x="100" y="100" width="1336" height="624" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1591724558564">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="100" y="100" width="1336" height="624" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591724558564" />
+    <state x="346" y="-2" key="search.everywhere.popup" timestamp="1591715726111">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="346" y="-2" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591715726111" />
   </component>
 </project>

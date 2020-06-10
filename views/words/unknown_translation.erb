@@ -1,0 +1,18 @@
+<div class="grid-x grid-padding-x">
+  <div class="cell">
+    <h3>Список слов без перевода</h3>
+    <ol>
+      <% if @words.size == 0 %>
+        <p class="callout">
+          Не было найдено слов без перевода
+        </p>
+      <% else %>
+        <% @words.each do |word| %>
+          <li>
+            <a href="<%= path(word, 'new_translation') %>"><%= word.name %></a>
+          </li>
+        <% end %>
+      <% end %>
+    </ol>
+  </div>
+</div>
