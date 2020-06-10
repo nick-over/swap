@@ -1,18 +1,19 @@
-<div class="grid-x grid-margin-x">
-  <div class="cell large-12">
+<div class="grid-x grid-margin-y">
+  <div class="cell">
     <h3>Слово <%= @word.name %></h3>
-    <ul>
+    <ul class="menu">
       <li>
-        <a href="<%= path(@word, 'new_meaning') %>">Добавить новое значение для слова</a>
+        <a class="button hollow" href="<%= path(@word, 'new_meaning') %>">Добавить новое значение для слова</a>
       </li>
       <li>
-        <a href="<%= path(@word, 'new_translation') %>">Добавить новый перевод для слова</a>
+        <a class="button hollow" href="<%= path(@word, 'new_translation') %>">Добавить новый перевод для слова</a>
       </li>
       <li>
-        <a href="<%= path(@word, 'translation') %>">Перевод по значению</a>
+        <a class="button hollow" href="<%= path(@word, 'translation') %>">Перевод по значению</a>
       </li>
     </ul>
-    <a class="" href="<%= menu_path %>">Вернуться на главное меню</a>
+  </div>
+  <div class="cell">
     <% if @word.translations? %>
       <h4>Все возможные переводы слова</h4>
       <ol>
@@ -33,6 +34,10 @@
           </li>
         <% end %>
       </ol>
+      <% else %>
+    <p>
+      На данный момент, перевод данного слово нам неизвестен
+    </p>
     <% end %>
   </div>
 </div>

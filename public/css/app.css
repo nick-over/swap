@@ -5,3 +5,7 @@
 .error_message {
   font-style: italic;
 }
+
+.top-bar-left .button {
+  margin: 0
+}

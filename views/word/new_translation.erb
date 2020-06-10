@@ -1,7 +1,6 @@
 <div class="grid-x grid-padding-x">
   <div class="cell">
     <h3>Добавить новый перевод к слову <%= @word.name %></h3>
-    <a href="<%= menu_path %>">Вернуться на главное меню</a>
     <% form({method: :post}, {obj: @options}) do |f| %>
       <div class="grid-x grid-padding-x">
         <div class="cell">
@@ -10,11 +9,12 @@
         <div class="cell">
           <%= f.input(:meaning_translations, type: :textarea, label: "Введите перевод через запятую", placeholder: 'эксперт,профессионал') %>
         </div>
-        <div class="medium-3 cell">
+        <div class="medium-4 cell">
           <%= f.button(value: 'Добавить новые перевод', class: 'button') %>
+          <a class="button" href="<%= path(@word) %>">Отмена</a>
         </div>
-        <div class="medium-6 cell">
-          <a href="<%= path(@word, 'new_meaning') %>">Добавить новое значение для слова</a>
+        <div class="medium-4 cell">
+          <a class="button hollow" href="<%= path(@word, 'new_meaning') %>">Добавить новое значение для слова</a>
         </div>
       </div>
     <% end %>

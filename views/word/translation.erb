@@ -1,15 +1,16 @@
 <div class="grid-x grid-padding-x">
   <div class="cell">
-    <a href="<%= menu_path %>">Вернуться на главное меню</a>
-  </div>
-  <div class="cell">
     <% form({method: :post}, {obj: @options}) do |f| %>
-      <div class="grid grid-padding-x">
-        <div class="cell">
-          <%= f.input(:meaning_value, type: :select, label: "Веберите значение для слова", options: @word.meanings_values, add_blank: true) %>
+      <div class="grid-x grid-padding-x">
+        <div class="medium-12 cell">
+          <%= f.input(:meaning_value, type: :select, label: "Веберите значение для слова", options: @word.meanings_values) %>
         </div>
-        <div class="cell">
+        <div class="cell medium-4">
           <%= f.button(value: "Перевести", class: "button") %>
+          <a class="button" href="<%= path(@word) %>">Отмена</a>
+        </div>
+        <div class="medium-4 cell">
+          <a class="button hollow" href="<%= path(@word, 'new_meaning') %>">Добавить новое значение для слова</a>
         </div>
       </div>
     <% end %>
@@ -19,13 +20,13 @@
       <p class="callout">
         Для этого слова ещё нет перевода
       </p>
-    <% elsif @translations.size > 0%>
+    <% elsif @translations.size > 0 %>
       <p>Слово <em><%= @word.name %></em> в значении <em><%= @value %></em> имеет следующие переводы:</p>
       <ol>
         <% @translations.each do |translation| %>
-        <li>
-          <strong><%= translation %></strong>
-        </li>
+          <li>
+            <strong><%= translation %></strong>
+          </li>
         <% end %>
       </ol>
     <% end %>

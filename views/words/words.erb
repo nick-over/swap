@@ -1,7 +1,6 @@
 <div class="grid-x grid-margin-x">
   <div class="cell large-12">
     <h3>Поиск слов</h3>
-    <a class="" href="<%= menu_path %>">Вернуться на главное меню</a>
     <p>Введите слово или буквосочение</p>
     <% form({method: :post}, {obj: @options}) do |f| %>
       <div class="grid-x grid-margin-x">
@@ -10,6 +9,7 @@
         </div>
         <div class="large-8 cell align-middle">
           <%= f.button(value: "Поиск", class: 'button') %>
+          <a class="button" href="<%= menu_path %>">Отмена</a>
         </div>
       </div>
     <% end %>

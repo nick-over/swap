@@ -3,14 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9a5ca7e9-4b84-43b5-90a6-160bf127e6c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/words.rb" beforeDir="false" afterPath="$PROJECT_DIR$/routes/words.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translator_application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/translator_application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/menu/menu.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu/menu.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/new_meaning.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/new_translation.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/translation.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/unknown_translation.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/unknown_translations.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/word.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/word_list.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/word_list.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/word/new_meaning.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/new_meaning.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/word/new_translation.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/new_translation.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/word/translation.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/translation.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/word/word.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/word.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/words/new_word.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/new_word.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/words/translation_homonyms.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/translation_homonyms.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/words/words.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/words.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,8 @@
       <workItem from="1591715134337" duration="3992000" />
       <workItem from="1591732123271" duration="473000" />
       <workItem from="1591786217765" duration="12288000" />
-      <workItem from="1591803157194" duration="1156000" />
+      <workItem from="1591803157194" duration="3179000" />
+      <workItem from="1591806383505" duration="1457000" />
     </task>
     <servers />
   </component>

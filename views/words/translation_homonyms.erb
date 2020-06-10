@@ -1,7 +1,6 @@
 <div class="grid-x grid-padding-x">
   <div class="medium-10 cell">
     <h3>Транзитивные омониимы?</h3>
-    <a href="<%= menu_path %>">Вернуться на главное меню</a>
     <p class="callout secondary">
       Проверка на то, являются ли два слова <strong>"транзитивными омонимами"</strong>: их переводы омонимичны.
       Например, <em>«рука»</em> и <em>«оружие»</em> переводятся как «arm», поэтому они «транзитивные омонимы».
@@ -16,6 +15,7 @@
         </div>
         <div class="cell">
           <%= f.button(value: "Проверить", class: "button") %>
+          <a href="<%= menu_path %>" class="button">Отмена</a>
         </div>
       </div>
     <% end %>

@@ -10,21 +10,22 @@
 </head>
 <body>
 <div class="grid-container">
-  <div class="medium-8 cell">
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <a href="/menu" class="">Главное меню</a>
-      </div>
-      <div class="top-bar-right">
-        Перевод слов осуществляется с языка: <strong><%= @cur_lang.capitalize %></strong>
+  <div class="grid-x grid-padding-x">
+    <div class="cell">
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <a class="button hollow" href="/menu" class="">Главное меню</a>
+        </div>
+        <div class="top-bar-right">
+          Перевод слов осуществляется с языка: <strong><%= @cur_lang.capitalize %></strong>
+        </div>
       </div>
     </div>
+    <div class="cell">
+      <h2>Сайт-переводчик</h2>
+      <div class="callout"><%= yield %></div>
+    </div>
   </div>
-  <div class="medium-10 cell">
-    <h2>Сайт-переводчик</h2>
-    <div class="callout"><%= yield %></div>
-  </div>
-</div>
 </div>
 <script src="/js/vendor/jquery.js"></script>
 <script src="/js/vendor/what-input.js"></script>
