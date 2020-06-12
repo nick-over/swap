@@ -21,14 +21,22 @@
     <% end %>
   </div>
   <div class="medium-10 cell">
-    <p class="h5">
-      <% if @options != {} && @options.success? %>
+    <% if @options != {} && @options.success? %>
+      <% if @errors.size > 0 %>
+        <div class="callout warning">
+          <ul>
+            <% @errors.each do |error| %>
+              <li><%= error %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% else %>
         <% if @translation_homonyms %>
-          Слова <b><%= word_name1 %></b> и <b><%= word_name2 %></b> являеются транзитивными омонимами
+          Слова <b><%= @word1.name %></b> и <b><%= @word2.name %></b> являеются транзитивными омонимами
         <% else %>
-          Слова <b><%= word_name1 %></b> и <b><%= word_name2 %></b> не транзитивные омонимы
+          Слова <b><%= @word1.name %></b> и <b><%= @word2.name %></b> не транзитивные омонимы
         <% end %>
       <% end %>
-    </p>
+    <% end %>
   </div>
 </div>

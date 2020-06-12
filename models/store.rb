@@ -29,7 +29,6 @@ class Store
 
   def write_data
     raw_words = @word_list.all_words.map(&:to_h)
-    puts "YESSSSSSS #{raw_words}"
     yaml_data = Psych.dump({
                              word_list: raw_words
                            })

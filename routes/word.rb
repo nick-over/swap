@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Routes for the menu of this application
+# Routes for the word of this application
 class TranslatorApplication
   path Word do |word, action|
     if action
@@ -32,8 +32,8 @@ class TranslatorApplication
           if @options.success?
             @word.add_meaning(Meaning.new({
                                             value: @options[:meaning_value],
-                                            synonyms: @options[:meaning_synonyms].split(','),
-                                            translations: @options[:meaning_translations].split(',')
+                                            synonyms: @options[:meaning_synonyms].split(';'),
+                                            translations: @options[:meaning_translations].split(';')
                                           }))
             r.redirect(path(@word))
           end
@@ -48,7 +48,7 @@ class TranslatorApplication
           @options = DryResultFormeWrapper.new(TranslationSchema.call(r.params))
           if @options.success?
             @word.add_translations(@options[:meaning_value],
-                                   @options[:meaning_translations].split(','))
+                                   @options[:meaning_translations].split(';'))
             r.redirect(path(@word))
           end
           view('new_translation')

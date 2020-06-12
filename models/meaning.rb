@@ -4,9 +4,9 @@
 class Meaning
   attr_accessor :value, :synonyms, :translations
   def initialize(options)
-    @value = options[:value]
-    @synonyms = options[:synonyms]
-    @translations = options[:translations]
+    @value = options[:value].downcase
+    @synonyms = options[:synonyms].map(&:downcase)
+    @translations = options[:translations].map(&:downcase)
   end
 
   def to_h

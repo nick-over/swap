@@ -6,10 +6,10 @@
         <%= f.input(:meaning_value, type: :text, label: "Описание значения", placeholder: 'Инструмент') %>
       </div>
       <div class="large-12 cell">
-        <%= f.input(:meaning_synonyms, type: :textarea, label: "Синонимы к слову по значению в формате: синоним, синоним, синоним", placeholder: 'коса,мотокоса') %>
+        <%= f.input(:meaning_synonyms, type: :textarea, label: "Синонимы к слову по значению через точку с запятой ;", placeholder: 'коса;мотокоса;гибридная коса') %>
       </div>
       <div class="large-12 cell">
-        <%= f.input(:meaning_translations, type: :textarea, label: "Переводы слова через запятую", placeholder: 'drill,plait') %>
+        <%= f.input(:meaning_translations, type: :textarea, label: "Переводы слова через точку с запятой ;", placeholder: 'drill;plait') %>
       </div>
       <div class="large-6 cell">
         <%= f.button(value: "Добавить новое значение для слова", class:"button") %>

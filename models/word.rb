@@ -21,6 +21,7 @@ class Word
   end
 
   def add_translations(value, translations)
+    translations = translations.map(&:downcase)
     meaning_by_value(value).translations.concat(translations)
   end
 
@@ -58,11 +59,15 @@ class Word
   end
 
   def to_h
-    meanings = @meanings.map do |meaning|
-      [[:value, meaning.value],
-       [:synonyms, meaning.synonyms],
-       [:translations, meaning.translations]].to_h
-    end
+    meanings = if @meanings.empty?
+                 []
+               else
+                 @meanings.map do |meaning|
+                   [[:value, meaning.value],
+                    [:synonyms, meaning.synonyms],
+                    [:translations, meaning.translations]].to_h
+                 end
+               end
     [[:lang, @lang], [:name, @name], [:meanings, meanings]].to_h
   end
 end

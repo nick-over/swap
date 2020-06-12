@@ -8,14 +8,15 @@ class WordList
     @word_list = word_list.map do |word|
       [{ name: word.name, lang: word.lang }, word]
     end.to_h
-    @cur_lang = cur_lang.downcase
+    @cur_lang = cur_lang
   end
 
   def word_by_name(name)
-    @word_list[{ name: name, lang: @cur_lang }]
+    @word_list[{ name: name.downcase, lang: @cur_lang }]
   end
 
   def add_word(word)
+    word.name.downcase!
     @word_list[{ name: word.name, lang: word.lang }] = word
   end
 
@@ -30,14 +31,16 @@ class WordList
   end
 
   def all_words_by_cur_lang
-    all_words.select { |word| word.lang.downcase == @cur_lang.downcase }
+    all_words.select { |word| word.lang == @cur_lang }
   end
 
   def translation_homonyms?(word1, word2)
+    return nil if word1.nil? || word2.nil?
+
     translations1 = word1.all_translations
     translations2 = word2.all_translations
-    translations1.one? do |translation|
-      translations2.one? { |tr| tr.downcase == translation.downcase }
+    translations1.any? do |translation|
+      translations2.any? { |tr| tr == translation }
     end
   end
 

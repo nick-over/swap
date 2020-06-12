@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Routes for the menu of this application
+# Routes for the words of this application
 class TranslatorApplication
   path :words do |action|
     if action
@@ -30,26 +30,21 @@ class TranslatorApplication
     end
     r.is 'translation_homonyms' do
       @options = {}
+      @errors = []
       r.get do
-        @options = {}
         view('translation_homonyms')
       end
       r.post do
         @options = DryResultFormeWrapper.new(TranslationHomonymsSchema.call(r.params))
         if @options.success?
-          puts @options[:word_name1], @options[:word_name2]
+          @errors = Validator.check_words_name_in_db(@options[:word_name1],
+                                                     @options[:word_name2],
+                                                     opts[:words])[:errors]
           @word1 = opts[:words].word_by_name(@options[:word_name1])
           @word2 = opts[:words].word_by_name(@options[:word_name2])
-          next if @word1.nil? || @word2.nil?
-
           @translation_homonyms = opts[:words].translation_homonyms?(@word1, @word2)
-          view('translation_homonyms', locals: {
-                 word_name1: @options[:word_name1],
-                 word_name2: @options[:word_name2]
-               })
-        else
-          view('translation_homonyms')
         end
+        view('translation_homonyms')
       end
     end
     r.is 'new' do

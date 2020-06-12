@@ -3,15 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="9a5ca7e9-4b84-43b5-90a6-160bf127e6c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bash.exe.stackdump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/words.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/db/words.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/meaning.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/meaning.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/meaning_schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/meaning_schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/store.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/store.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/translation_schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/translation_schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/word.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/word.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/word_list.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/word_list.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/word_name_schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/word_name_schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/word.rb" beforeDir="false" afterPath="$PROJECT_DIR$/routes/word.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/words.rb" beforeDir="false" afterPath="$PROJECT_DIR$/routes/words.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/word/new_meaning.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/new_meaning.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/word/new_translation.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/new_translation.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/translation.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/translation.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/word/not_found.erb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/word/word.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/word.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/new_word.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/new_word.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/words/not_found.erb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/words/translation_homonyms.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/translation_homonyms.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/words/unknown_translations.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/unknown_translations.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/words/words.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/words.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,16 +45,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/word" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/menu" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Files\Projects\Ruby\Practice\Translator\models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Files\Projects\Ruby\Practice\Translator\views\menu" />
       <recent name="D:\Files\Projects\Ruby\Practice\Translator\views\word" />
       <recent name="D:\Files\Projects\Ruby\Practice\Translator\views\words" />
       <recent name="D:\Files\Projects\Ruby\Practice\Translator\models" />
       <recent name="D:\Files\Projects\Ruby\Practice\Translator\views" />
-      <recent name="D:\Files\Projects\Ruby\Practice\Translator" />
     </key>
   </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
@@ -77,7 +90,12 @@
       <workItem from="1591732123271" duration="473000" />
       <workItem from="1591786217765" duration="12288000" />
       <workItem from="1591803157194" duration="3179000" />
-      <workItem from="1591806383505" duration="1457000" />
+      <workItem from="1591806383505" duration="3483000" />
+      <workItem from="1591811684582" duration="1135000" />
+      <workItem from="1591891869566" duration="3503000" />
+      <workItem from="1591940417548" duration="5319000" />
+      <workItem from="1591947667074" duration="1313000" />
+      <workItem from="1591949040317" duration="3959000" />
     </task>
     <servers />
   </component>
@@ -89,10 +107,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="501" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591649951857" />
-    <state x="161" y="0" key="SettingsEditor" timestamp="1591798242739">
+    <state x="815" y="34" key="FileChooserDialogImpl" timestamp="1591949343521">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="161" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591798242739" />
+    <state x="815" y="34" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591949343521" />
+    <state x="161" y="0" key="SettingsEditor" timestamp="1591949344626">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="161" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591949344626" />
     <state x="100" y="100" width="1336" height="624" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1591724558564">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -101,5 +123,19 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="346" y="-2" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591715726111" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/views/words/translation_homonyms.erb</url>
+          <line>24</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

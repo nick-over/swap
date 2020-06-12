@@ -1,13 +1,13 @@
 <div class="grid-x grid-padding-x">
   <div class="cell">
-    <h3>Добавить новый перевод к слову <%= @word.name %></h3>
+    <h3>Добавить новый перевод к слову <em><%= @word.name.capitalize %></em></h3>
     <% form({method: :post}, {obj: @options}) do |f| %>
       <div class="grid-x grid-padding-x">
         <div class="cell">
-          <%= f.input(:meaning_value, type: :select, label: "Веберите значение для слова", options: @word.meanings_values, add_blank: true) %>
+          <%= f.input(:meaning_value, type: :select, label: "Веберите значение для слова", options: @word.meanings_values) %>
         </div>
         <div class="cell">
-          <%= f.input(:meaning_translations, type: :textarea, label: "Введите перевод через запятую", placeholder: 'эксперт,профессионал') %>
+          <%= f.input(:meaning_translations, type: :textarea, label: "Введите перевод через точку с запяой ;", placeholder: 'эксперт;профессионал;лучший эксперт') %>
         </div>
         <div class="medium-4 cell">
           <%= f.button(value: 'Добавить новые перевод', class: 'button') %>
