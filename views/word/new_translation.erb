@@ -7,7 +7,7 @@
           <%= f.input(:meaning_value, type: :select, label: "Веберите значение для слова", options: @word.meanings_values) %>
         </div>
         <div class="cell">
-          <%= f.input(:meaning_translations, type: :textarea, label: "Введите перевод через точку с запяой ;", placeholder: 'эксперт;профессионал;лучший эксперт') %>
+          <%= f.input(:meaning_translations, type: :textarea, label: "Введите переводы слова через точку с запятой", placeholder: 'эксперт;профессионал;лучший эксперт') %>
         </div>
         <div class="medium-4 cell">
           <%= f.button(value: 'Добавить новые перевод', class: 'button') %>

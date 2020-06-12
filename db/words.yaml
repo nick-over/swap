@@ -1,2 +1,12 @@
 ---
-:word_list: []
+:word_list:
+- :lang: русский
+  :name: коса
+  :meanings:
+  - :value: инструмент
+    :synonyms:
+    - мотокоса
+    - гибридная коса
+    :translations:
+    - drill
+    - plait

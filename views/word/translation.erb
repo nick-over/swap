@@ -1,5 +1,6 @@
 <div class="grid-x grid-padding-x">
   <div class="cell">
+    <h4>Найти перевод слова <em><%= @word.name %></em> по значению</h4>
     <% form({method: :post}, {obj: @options}) do |f| %>
       <div class="grid-x grid-padding-x">
         <div class="medium-12 cell">
@@ -16,19 +17,21 @@
     <% end %>
   </div>
   <div class="cell">
-    <% if @translations.size == 0 && !@value.nil? %>
-      <p class="callout">
-        Для этого слова ещё нет перевода
-      </p>
-    <% elsif @translations.size > 0 %>
-      <p>Слово <em><%= @word.name %></em> в значении <em><%= @value %></em> имеет следующие переводы:</p>
-      <ol>
-        <% @translations.each do |translation| %>
-          <li>
-            <strong><%= translation %></strong>
-          </li>
-        <% end %>
-      </ol>
+    <% if @options != {} && @options.success? %>
+      <% if @translations.size == 0 %>
+        <p class="callout">
+          Для этого слова ещё нет перевода
+        </p>
+      <% else %>
+        <p>Слово <em><%= @word.name %></em> в значении <em><%= @value %></em> имеет следующие переводы:</p>
+        <ol>
+          <% @translations.each do |translation| %>
+            <li>
+              <strong><%= translation %></strong>
+            </li>
+          <% end %>
+        </ol>
+      <% end %>
     <% end %>
   </div>
 </div>

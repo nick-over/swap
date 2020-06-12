@@ -14,6 +14,7 @@
     </ul>
   </div>
   <div class="cell">
+    <a href="<%= words_path %>" class="button hollow secondary">Назад</a>
     <% if @word.translations? %>
       <h4>Все возможные переводы слова</h4>
       <ol>
@@ -21,14 +22,12 @@
           <li>В значении: <strong><%= meaning.value %></strong>
             <p>
               Ближашие синонимы:
-              <% meaning.synonyms.each do |synonym| %>
-                <%= synonym %>,
-              <% end %>
+              <%= meaning.synonyms.join(', ') %>
             </p>
             Переводы:
             <ul>
               <% meaning.translations.each do |translation| %>
-                <li><%= translation %></li>
+                <li><b><%= translation %></b></li>
               <% end %>
             </ul>
           </li>

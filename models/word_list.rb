@@ -22,7 +22,7 @@ class WordList
 
   def words_by_chars(chars)
     all_words_by_cur_lang.select do |word|
-      word.name.downcase.include?(chars.downcase)
+      word.name.include?(chars.downcase)
     end
   end
 

@@ -3,19 +3,18 @@
 # Routes for the words of this application
 class TranslatorApplication
   path :words do |action|
-    if action
       WEBrick::HTTPUtils.escape("/words/#{action}")
-    else
-      WEBrick::HTTPUtils.escape('/words')
-    end
   end
+
+  path :words, '/words'
 
   hash_branch('words') do |r|
     append_view_subdir('words')
     set_layout_options(template: '../views/layout')
+    @words = []
     r.is do
       r.get do
-        @words = nil
+        @options = {}
         view('words')
       end
       r.post do
@@ -54,7 +53,6 @@ class TranslatorApplication
       r.post do
         @options = DryResultFormeWrapper.new(WordNameSchema.call(r.params))
         word_name = @options[:word_name]
-        puts word_name.encoding
         if @options.success?
           @word = Word.new(name: word_name, lang: @cur_lang)
           opts[:words].add_word(@word)

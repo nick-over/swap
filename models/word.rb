@@ -32,9 +32,7 @@ class Word
   end
 
   def translations_by_value(value)
-    meaning = @meanings.select do |mean|
-      mean.value.downcase == value.downcase
-    end[0]
+    meaning = meaning_by_value(value)
     return [] if meaning.nil?
 
     meaning.translations
