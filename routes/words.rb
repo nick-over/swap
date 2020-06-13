@@ -2,11 +2,15 @@
 
 # Routes for the words of this application
 class TranslatorApplication
-  path :words do |action|
+
+  path :words do |action = nil|
+    if action
       WEBrick::HTTPUtils.escape("/words/#{action}")
+    else
+      WEBrick::HTTPUtils.escape("/words")
+    end
   end
 
-  path :words, '/words'
 
   hash_branch('words') do |r|
     append_view_subdir('words')

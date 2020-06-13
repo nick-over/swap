@@ -3,26 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9a5ca7e9-4b84-43b5-90a6-160bf127e6c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/words.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/db/words.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/meaning_schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/meaning_schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/meaning_value.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/meaning_value.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/translation_schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/translation_schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/word.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/word.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/word_list.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/word_list.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/word.rb" beforeDir="false" afterPath="$PROJECT_DIR$/routes/word.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/words.rb" beforeDir="false" afterPath="$PROJECT_DIR$/routes/words.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/menu/menu.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu/menu.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/not_found.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/not_found.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/new_meaning.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/new_meaning.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/new_translation.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/new_translation.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/not_found.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/not_found.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/translation.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/translation.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/word.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/word.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/words/new_word.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/new_word.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/not_found.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/not_found.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/unknown_translations.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/unknown_translations.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/words.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/words.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +77,8 @@
       <workItem from="1591891869566" duration="3503000" />
       <workItem from="1591940417548" duration="5319000" />
       <workItem from="1591947667074" duration="1313000" />
-      <workItem from="1591949040317" duration="9420000" />
+      <workItem from="1591949040317" duration="10257000" />
+      <workItem from="1592049454335" duration="312000" />
     </task>
     <servers />
   </component>
