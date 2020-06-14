@@ -11,8 +11,8 @@ class WordList
     @cur_lang = cur_lang
   end
 
-  def word_by_name(name)
-    @word_list[{ name: name.downcase, lang: @cur_lang }]
+  def word_by_name(name, lang = @cur_lang)
+    @word_list[{ name: name.downcase, lang: lang }]
   end
 
   def add_word(word)

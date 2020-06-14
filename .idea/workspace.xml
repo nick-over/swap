@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9a5ca7e9-4b84-43b5-90a6-160bf127e6c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/word_list.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/word_list.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/words.rb" beforeDir="false" afterPath="$PROJECT_DIR$/routes/words.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/new_word.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/new_word.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,8 @@
       <workItem from="1591940417548" duration="5319000" />
       <workItem from="1591947667074" duration="1313000" />
       <workItem from="1591949040317" duration="10257000" />
-      <workItem from="1592049454335" duration="312000" />
+      <workItem from="1592049454335" duration="1658000" />
+      <workItem from="1592130557099" duration="556000" />
     </task>
     <servers />
   </component>
