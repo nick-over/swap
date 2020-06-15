@@ -10,3 +10,34 @@
     :translations:
     - drill
     - plait
+- :lang: русский
+  :name: рука
+  :meanings:
+  - :value: верхняя конечность человека от плеча до пальцец
+    :synonyms:
+    - кисть
+    :translations:
+    - hand
+    - paw
+    - arm
+- :lang: русский
+  :name: оружие
+  :meanings:
+  - :value: средство защиты или нападения
+    :synonyms:
+    - винтовка
+    - ружье
+    :translations:
+    - weapon
+    - gun
+    - arm
+- :lang: английский
+  :name: weapon
+  :meanings:
+  - :value: средство защиты или нападения
+    :synonyms:
+    - gun
+    - arm
+    :translations:
+    - оружие
+    - пушка

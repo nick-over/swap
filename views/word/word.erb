@@ -21,8 +21,11 @@
         <% @word.meanings.each do |meaning| %>
           <li>В значении: <strong><%= meaning.value %></strong>
             <p>
-              Ближашие синонимы:
-              <%= meaning.synonyms.join(', ') %>
+              <% if meaning.synonyms.size == 0 %>
+                Ближашие синонимы отсутствуют.
+              <% else %>
+                Ближашие синонимы: <%= meaning.synonyms.join(', ') %>
+              <% end %>
             </p>
             Переводы:
             <ul>
@@ -33,10 +36,10 @@
           </li>
         <% end %>
       </ol>
-      <% else %>
-    <p class="callout secondary">
-      На данный момент, перевод данного слово нам неизвестен
-    </p>
+    <% else %>
+      <p class="callout secondary">
+        На данный момент, перевод данного слово нам неизвестен
+      </p>
     <% end %>
   </div>
 </div>

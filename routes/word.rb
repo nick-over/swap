@@ -32,7 +32,7 @@ class TranslatorApplication
           if @options.success?
             @word.add_meaning(Meaning.new({
                                             value: @options[:meaning_value],
-                                            synonyms: @options[:meaning_synonyms]
+                                            synonyms: (@options[:meaning_synonyms] || '')
                                                           .split(';').map(&:strip),
                                             translations: @options[:meaning_translations]
                                                               .split(';').map(&:strip)
