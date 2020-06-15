@@ -10,6 +10,12 @@
     :translations:
     - drill
     - plait
+  - :value: причёска
+    :synonyms:
+    - стрижка
+    :translations:
+    - tail
+    - braid
 - :lang: русский
   :name: рука
   :meanings:

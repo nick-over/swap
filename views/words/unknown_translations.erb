@@ -10,7 +10,7 @@
       <% else %>
         <% @words.each do |word| %>
           <li>
-            <a href="<%= path(word, 'new_translation') %>"><%= word.name %></a>
+            <a href="<%= path(word, 'new_meaning') %>"><%= word.name %></a>
           </li>
         <% end %>
       <% end %>

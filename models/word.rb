@@ -39,7 +39,7 @@ class Word
   end
 
   def translations?
-    @meanings.one? do |meaning|
+    @meanings.any? do |meaning|
       !meaning.translations.empty?
     end
   end
