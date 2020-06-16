@@ -4,14 +4,9 @@
     <list default="true" id="9a5ca7e9-4b84-43b5-90a6-160bf127e6c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/words.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/db/words.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/meaning_schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/meaning_schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/meaning_value_schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/meaning_value_schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/translation_schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/translation_schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/word.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/word.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/word_name_schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/word_name_schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/word.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/word.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/translation_homonyms.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/translation_homonyms.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/unknown_translations.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/unknown_translations.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/word/new_meaning.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/new_meaning.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/word/new_translation.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/new_translation.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/word/translation.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/translation.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +33,15 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Files\Projects\Ruby\Practice\Translator\models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Files\Projects\Ruby\Practice\Translator\views\menu" />
       <recent name="D:\Files\Projects\Ruby\Practice\Translator\views\word" />
       <recent name="D:\Files\Projects\Ruby\Practice\Translator\views\words" />
       <recent name="D:\Files\Projects\Ruby\Practice\Translator\models" />
       <recent name="D:\Files\Projects\Ruby\Practice\Translator\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Files\Projects\Ruby\Practice\Translator\models" />
     </key>
   </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
@@ -88,7 +83,8 @@
       <workItem from="1592049454335" duration="1658000" />
       <workItem from="1592130557099" duration="2097000" />
       <workItem from="1592206974389" duration="2370000" />
-      <workItem from="1592209383406" duration="947000" />
+      <workItem from="1592209383406" duration="1555000" />
+      <workItem from="1592304695382" duration="3068000" />
     </task>
     <servers />
   </component>

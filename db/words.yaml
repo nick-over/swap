@@ -47,3 +47,23 @@
     :translations:
     - оружие
     - пушка
+- :lang: английский
+  :name: mansion
+  :meanings:
+  - :value: дом для семьи
+    :synonyms:
+    - вилла
+    - коттедж
+    :translations:
+    - mansion
+    - detached house
+    - palace
+- :lang: английский
+  :name: heir
+  :meanings:
+  - :value: продолжает чью-либо деятельность
+    :synonyms:
+    - successor
+    :translations:
+    - наследник
+    - преемник
