@@ -1,10 +1,10 @@
 <div class="grid-x grid-padding-x">
   <div class="large-12 cell">
-    <h3>Добавление нового значения для слова: <em><%= @word.name.capitalize %></em></h3>
+    <h4>Добавление нового значения для слова <em><%= @word.name.capitalize %></em></h4>
     <% form({method: :post}, {obj: @options}) do |f| %>
     <div class="grid-x grid-padding-x">
       <div class="large-6 cell">
-        <%= f.input(:meaning_value, type: :text, label: "Описание значения", placeholder: 'Инструмент') %>
+        <%= f.input(:meaning_value, type: :text, label: "Описание значения", placeholder: 'инструмент') %>
       </div>
       <div class="large-12 cell">
         <%= f.input(:meaning_synonyms, type: :textarea, label: "Синонимы к слову по значению через точку с запятой", placeholder: 'коса;мотокоса;гибридная коса') %>
