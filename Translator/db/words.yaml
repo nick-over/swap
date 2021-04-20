@@ -1,0 +1,69 @@
+---
+:word_list:
+- :lang: русский
+  :name: коса
+  :meanings:
+  - :value: инструмент
+    :synonyms:
+    - мотокоса
+    - гибридная коса
+    :translations:
+    - drill
+    - plait
+  - :value: причёска
+    :synonyms:
+    - стрижка
+    :translations:
+    - tail
+    - braid
+- :lang: русский
+  :name: рука
+  :meanings:
+  - :value: верхняя конечность человека от плеча до пальцев
+    :synonyms:
+    - кисть
+    :translations:
+    - hand
+    - paw
+    - arm
+- :lang: русский
+  :name: оружие
+  :meanings:
+  - :value: средство защиты или нападения
+    :synonyms:
+    - винтовка
+    - ружье
+    :translations:
+    - weapon
+    - gun
+    - arm
+- :lang: английский
+  :name: weapon
+  :meanings:
+  - :value: средство защиты или нападения
+    :synonyms:
+    - gun
+    - arm
+    :translations:
+    - оружие
+    - пушка
+- :lang: английский
+  :name: mansion
+  :meanings:
+  - :value: дом для семьи
+    :synonyms:
+    - вилла
+    - коттедж
+    :translations:
+    - mansion
+    - detached house
+    - palace
+- :lang: английский
+  :name: heir
+  :meanings:
+  - :value: продолжает чью-либо деятельность
+    :synonyms:
+    - successor
+    :translations:
+    - наследник
+    - преемник

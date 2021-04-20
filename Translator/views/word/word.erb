@@ -1,0 +1,45 @@
+<div class="grid-x grid-margin-y">
+  <div class="cell">
+    <h3>Слово <em><%= @word.name.capitalize %></em></h3>
+    <ul class="menu">
+      <li>
+        <a class="button hollow" href="<%= path(@word, 'new_meaning') %>">Добавить новое значение для слова</a>
+      </li>
+      <li>
+        <a class="button hollow" href="<%= path(@word, 'new_translation') %>">Добавить новый перевод для слова</a>
+      </li>
+      <li>
+        <a class="button hollow" href="<%= path(@word, 'translation') %>">Перевод по значению</a>
+      </li>
+    </ul>
+  </div>
+  <div class="cell">
+    <a href="<%= words_path %>" class="button hollow secondary">Назад</a>
+    <% if @word.translations? %>
+      <h4>Все возможные переводы слова</h4>
+      <ol>
+        <% @word.meanings.each do |meaning| %>
+          <li>В значении: <strong><%= meaning.value %></strong>
+            <p>
+              <% if meaning.synonyms.size == 0 %>
+                Ближайшие синонимы отсутствуют.
+              <% else %>
+                Ближашие синонимы: <%= meaning.synonyms.join(', ') %>
+              <% end %>
+            </p>
+            Переводы:
+            <ul>
+              <% meaning.translations.each do |translation| %>
+                <li><b><%= translation %></b></li>
+              <% end %>
+            </ul>
+          </li>
+        <% end %>
+      </ol>
+    <% else %>
+      <p class="callout secondary">
+        На данный момент, перевод данного слово нам неизвестен
+      </p>
+    <% end %>
+  </div>
+</div>

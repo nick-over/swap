@@ -1,0 +1,37 @@
+<div class="grid-x grid-margin-x">
+  <div class="cell large-12">
+    <h3>Поиск слов</h3>
+    <p>Введите слово или буквосочение, чтобы найти нужное слово</p>
+    <% form({method: :post}, {obj: @options}) do |f| %>
+      <div class="grid-x grid-margin-x">
+        <div class="large-8 cell">
+          <%= f.input(:word_name, type: :text, label: 'Слово') %>
+        </div>
+        <div class="large-8 cell align-middle">
+          <%= f.button(value: "Поиск", class: 'button') %>
+          <a class="button" href="<%= menu_path %>">Отмена</a>
+        </div>
+      </div>
+    <% end %>
+    <% if @options == {} %>
+      <p>
+        Здесь появится список найденных слов
+      </p>
+    <% elsif @options.success? %>
+      <% if @words.size == 0 %>
+        <p class="callout warning">
+          Не удалось ничего найти
+        </p>
+      <% else %>
+        <h4>Список найденых слов</h4>
+        <ul>
+          <% @words.each do |word| %>
+            <li>
+              <a href="<%= path(word) %>"><%= word.name %></a>
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
+    <% end %>
+  </div>
+</div>
