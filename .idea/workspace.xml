@@ -1,62 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a5ca7e9-4b84-43b5-90a6-160bf127e6c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Translator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Translator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.rubocop.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ru" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/words.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/dry_result_forme_wrapper.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/lang_schema.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/lang_value.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/meaning.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/meaning_schema.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/meaning_schema_rus.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/meaning_value_schema.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/schema_types.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/store.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/translation_homonyms.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/translation_schema.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/validator.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/word.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/word_list.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/word_name_schema.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/foundation.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/foundation.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/foundation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/foundation.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor/what-input.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/menu.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/word.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/words.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/translator_application.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/menu/menu.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/menu/not_found.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/not_found.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/new_meaning.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/new_translation.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/not_found.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/translation.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/word.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/new_word.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/not_found.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/translation_homonyms.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/unknown_translations.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/words.erb" beforeDir="false" />
-    </list>
+    <list default="true" id="9a5ca7e9-4b84-43b5-90a6-160bf127e6c1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +88,7 @@
       <workItem from="1600788525660" duration="1020000" />
       <workItem from="1600789750122" duration="406000" />
       <workItem from="1603713744415" duration="6936000" />
-      <workItem from="1618909380709" duration="1121000" />
+      <workItem from="1618909380709" duration="1524000" />
     </task>
     <servers />
   </component>
