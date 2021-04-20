@@ -55,7 +55,10 @@ class TranslatorApplication
       r.post do
         @options = DryResultFormeWrapper.new(WordNameSchema.call(r.params))
         word_name = @options[:word_name]
+
         if @options.success?
+          @cur_lang = LangValue.get_lang_by_match(word_name)
+          opts[:words].cur_lang = @cur_lang
           @word = Word.new(name: word_name, lang: @cur_lang)
           opts[:words].add_word(@word)
           r.redirect(path(@word))

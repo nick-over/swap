@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9a5ca7e9-4b84-43b5-90a6-160bf127e6c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/words.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/db/words.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/menu/not_found.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/new_meaning.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/new_meaning.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/word/new_translation.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/word/new_translation.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/words/new_word.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/words/new_word.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/lang_value.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/lang_value.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/meaning_schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models/meaning_schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/word.rb" beforeDir="false" afterPath="$PROJECT_DIR$/routes/word.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/words.rb" beforeDir="false" afterPath="$PROJECT_DIR$/routes/words.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +85,17 @@
       <workItem from="1592130557099" duration="2097000" />
       <workItem from="1592206974389" duration="2370000" />
       <workItem from="1592209383406" duration="1555000" />
-      <workItem from="1592304695382" duration="7279000" />
+      <workItem from="1592304695382" duration="7903000" />
+      <workItem from="1592390876447" duration="140000" />
+      <workItem from="1592391413609" duration="600000" />
+      <workItem from="1592401086337" duration="31000" />
+      <workItem from="1592633263614" duration="7670000" />
+      <workItem from="1600787498389" duration="698000" />
+      <workItem from="1600788246789" duration="187000" />
+      <workItem from="1600788525660" duration="1020000" />
+      <workItem from="1600789750122" duration="406000" />
+      <workItem from="1603713744415" duration="6936000" />
+      <workItem from="1618909380709" duration="389000" />
     </task>
     <servers />
   </component>

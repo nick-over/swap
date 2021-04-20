@@ -28,14 +28,18 @@ class TranslatorApplication
           view('new_meaning')
         end
         r.post do
-          @options = DryResultFormeWrapper.new(MeaningSchema.call(r.params))
+          @options = if @cur_lang == LangValue::RUS
+                       DryResultFormeWrapper.new(MeaningSchema.call(r.params))
+                     else
+                       DryResultFormeWrapper.new(MeaningSchemaRus.call(r.params))
+                     end
           if @options.success?
             @word.add_meaning(Meaning.new({
                                             value: @options[:meaning_value],
                                             synonyms: (@options[:meaning_synonyms] || '')
-                                                          .split(';').map(&:strip),
+                                                            .split(';').map(&:strip),
                                             translations: @options[:meaning_translations]
-                                                              .split(';').map(&:strip)
+                                                                .split(';').map(&:strip)
                                           }))
             r.redirect(path(@word))
           end
